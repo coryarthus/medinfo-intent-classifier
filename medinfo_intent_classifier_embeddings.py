@@ -93,7 +93,7 @@ if user_query:
             "predicted_intent_id": best_intent["intent_id"],
             "category": best_intent["category"],
             "subtype": best_intent["subtype"],
-            "confidence": round(confidence, 2)
+            "confidence": round(best_score, 2)
         }
         feedback_log = []
         if os.path.exists("feedback_log.json"):
